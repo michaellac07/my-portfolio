@@ -13,13 +13,13 @@
 
   <link rel="stylesheet" href="MichaellaCallo.css">
 </head>
-<body>
+<body id="top">
 
   <!-- Clean One-Line Header -->
   <header>
     <div class="nav-container">
       <div class="brand-group">
-        <span class="badge-tech">Computer Engineering</span>
+        <a href="#top" class="badge-tech">Engr. Michaella Callo</a>
       </div>
       <nav class="nav-links-wrapper">
         <ul class="nav-links">
@@ -163,14 +163,14 @@
         <button class="filter-btn active" data-filter="all">All Works</button>
         <button class="filter-btn" data-filter="projects">Hardware & IoT Systems</button>
         <button class="filter-btn" data-filter="uiux">Web UI/UX & Planning</button>
-        <button class="filter-btn" data-filter="comms">External Relations & Docs</button>
-        <button class="filter-btn" data-filter="layout">Layout and Editing</button>
+        <button class="filter-btn" data-filter="comms">External Relations</button>
+        <button class="filter-btn" data-filter="manage">Project Management</button>
       </div>
 
       <div class="portfolio-grid" id="portfolioGrid">
 
         <!-- Item 1: AirLink Defense -->
-        <div class="portfolio-card" data-cat="projects comms">
+        <div class="portfolio-card" data-cat="projects manage">
           <div class="card-tag-wrapper">
             <span class="card-badge">Defense Tech & Pitch</span>
           </div>
@@ -184,40 +184,42 @@
               <span>Presentation Design</span>
               <span>AFP Ideathon 2025</span>
             </div>
-            <button class="card-btn" data-modal-title="AirLink Defense Prototype & Pitch" data-modal-body="Role: Developer & Concept Presenter. Built an embedded microcontroller communication prototype and translated defense telemetry into structured slide presentations and executive briefings at the AFP Ideathon 2025." data-modal-link="https://drive.google.com/drive/folders/1AXO0P_gXxEHLxImDub40HkmKdT6kA4_y?usp=drive_link">
+            <button class="card-btn" data-modal-title="AirLink Defense Prototype & Pitch" data-modal-body="Role: Developer & Project Manager. Built an embedded microcontroller communication prototype and translated defense telemetry into structured slide presentations and executive briefings at the AFP Ideathon 2025." 
+                                                                                          data-modal-link="https://drive.google.com/file/d/1WqD1lvitdOWBiO73-1atRkzRaaOqNDnm/view?usp=sharing">
               <i data-lucide="eye"></i> View Details
             </button>
           </div>
         </div>
 
         <!-- Item 2: AirHaven -->
-        <div class="portfolio-card" data-cat="projects uiux">
+        <div class="portfolio-card" data-cat="projects uiux manage">
           <div class="card-tag-wrapper">
-            <span class="card-badge">IoT & Data Analytics</span>
+            <span class="card-badge">IoT & Web Development</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">AirHaven: Real-Time Air Quality Monitor</h3>
             <p class="card-desc">
-              Developed an air quality monitoring platform tracking Manila pollutants (CO, NO2, O3, PM2.5, PM10) to deliver real-time data tracking and clear environmental reporting.
+              Airhaven is an air quality monitoring platform tracking Manila pollutants (CO, NO2, O3, PM2.5, PM10) to deliver real-time data tracking and clear environmental reporting.
             </p>
             <div class="card-tags">
-              <span>Sensor Telemetry</span>
+              <span>Air Quality Monitoring</span>
               <span>Data Analysis</span>
               <span>Civic Technology</span>
             </div>
-            <button class="card-btn" data-modal-title="AirHaven Air Quality Monitoring System" data-modal-body="Role: Co-Developer & Data Lead. Structured multi-pollutant sensor telemetry (PM2.5, PM10, CO, NO2, O3) into intelligible, structured environmental metrics for urban tracking." data-modal-link="https://drive.google.com/file/d/1YX03ZC0M0YJZEYWP7-vfUyjmxcQj_WQ6/view?usp=sharing">
+            <button class="card-btn" data-modal-title="AirHaven Air Quality Monitoring System" data-modal-body="Role: Co-Lead & Web Developer. Structured multi-pollutant sensor (PM2.5, PM10, CO, NO2, O3) into intelligible, structured environmental metrics for urban tracking." 
+                                                                                               data-modal-link="https://drive.google.com/file/d/1YX03ZC0M0YJZEYWP7-vfUyjmxcQj_WQ6/view?usp=sharing">
               <i data-lucide="eye"></i> View Details
             </button>
           </div>
         </div>
 
         <!-- Item 3: ESPS Website Usability -->
-        <div class="portfolio-card" data-cat="uiux">
+        <div class="portfolio-card" data-cat="uiux manage">
           <div class="card-tag-wrapper">
             <span class="card-badge">Web UI/UX</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">ESPS Website Usability & Interface Recommendations</h3>
+            <h3 class="card-title">ESPS Website Usability Enhancement</h3>
             <p class="card-desc">
               Evaluated institutional web layouts and delivered targeted Web UI/UX recommendations using HTML, CSS, and JavaScript to enhance navigation for students and teachers.
             </p>
@@ -226,19 +228,20 @@
               <span>UI/UX Analysis</span>
               <span>Interface Design</span>
             </div>
-            <button class="card-btn" data-modal-title="ESPS Website Usability Enhancement" data-modal-body="Role: EdTech Assistant & Digital Lead. Inspected user journeys across school web portals, proposing responsive UI adjustments and structured content hierarchy to streamline digital services." data-modal-link="https://espswebsiteproposal.netlify.app/">
+            <button class="card-btn" data-modal-title="ESPS Website Usability Enhancement" data-modal-body="Role: EdTech Assistant & Digital Lead. Inspected user journeys across school web portals, proposing responsive UI adjustments and structured content hierarchy to streamline digital services." 
+                                                                                           data-modal-link="https://espswebsiteproposal.netlify.app/">
               <i data-lucide="eye"></i> View Details
             </button>
           </div>
         </div>
 
         <!-- Item 4: Lakbay Assistive Tech -->
-        <div class="portfolio-card" data-cat="projects layout">
+        <div class="portfolio-card" data-cat="manage">
           <div class="card-tag-wrapper">
             <span class="card-badge">Project Management</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Lakbay: Assistive Tech for Visually Impaired</h3>
+            <h3 class="card-title">Project Management Exhibit: Lakbay an Assistive Tech for Visually Impaired</h3>
             <p class="card-desc">
               Served as Project Manager and Developer directing the complete development lifecycle, delegating technical milestones, and building assistive features for visually impaired individuals.
             </p>
@@ -247,7 +250,8 @@
               <span>Task Delegation</span>
               <span>Assistive Software</span>
             </div>
-            <button class="card-btn" data-modal-title="Lakbay Assistive Technology" data-modal-body="Role: Project Manager & Developer. Oversaw planning sprints, milestone delivery, task delegation, and direct technical coding to deploy accessible assistive software." data-modal-link="https://drive.google.com/drive/folders/1T4SxQzApM0wHchtWKALp53RyOy3T9eOm?usp=drive_link">
+            <button class="card-btn" data-modal-title="Lakbay Assistive Technology" data-modal-body="Role: Project Manager & Developer. Oversaw planning sprints, milestone delivery, task delegation, and direct technical coding to deploy accessible assistive software." 
+                                                                                    data-modal-link="https://drive.google.com/file/d/1_CuVrxaOcR0R5DVrfIZpS9YkXjEFDQ36/view?usp=drive_link">
               <i data-lucide="eye"></i> View Details
             </button>
           </div>
@@ -261,15 +265,15 @@
           <div class="card-body">
             <h3 class="card-title">Inter-Organizational Relations & Event Organization</h3>
             <p class="card-desc">
-              Directed official partnership correspondence, sponsorship documents, and regional meeting minutes for student engineering chapters at PLM and the NCR Regional Board.
+              Facilitates organizational events and official partnership correspondence, sponsorship documents, and regional activities and competitions for student engineering chapters at PLM and the NCR Regional Student Board.
             </p>
             <div class="card-tags">
               <span>Partnerships</span>
-              <span>Official Correspondence</span>
-              <span>Event Organization</span>
-              <span>Stakeholder Relations</span>
+              <span>Facilitator</span>
+              <span>Event Organizer</span>
+              <span>External Relations</span>
             </div>
-            <button class="card-btn" data-modal-title="Institutional Comms & Secretariat Administration" data-modal-body="Role: VP External & Org Event Volunteer. Coordinated partnership communications with external colleges, oversaw official documentation, and participated in organizational events making sure the event runs smoothly." 
+            <button class="card-btn" data-modal-title="Institutional Comms & Secretariat Administration" data-modal-body="Role: ICPEP.SE-PLM VP External & ICPEP.SE-NCR Org Event Volunteer. Coordinated partnership communications with external colleges, oversaw official documentation, and participated in organizational events making sure the event runs smoothly." 
             data-modal-link-1="https://www.facebook.com/reel/2374962829522775" 
             data-modal-link-2="https://www.facebook.com/share/v/17ZAtJN6ea/"
             data-modal-link-3="https://www.facebook.com/share/p/1F3aeaKyYB/"
@@ -281,91 +285,96 @@
         </div>
 
         <!-- Item 6: Smart Room Proposal -->
-        <div class="portfolio-card" data-cat="projects">
+        <div class="portfolio-card" data-cat="manage">
           <div class="card-tag-wrapper">
             <span class="card-badge">Facility Planning</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Smart Room Research & Facility Floor Plan</h3>
+            <h3 class="card-title">Smart Room Research</h3>
             <p class="card-desc">
-              Spearheaded Smart Room facility planning at ESPS by researching smart devices, designing spatial floor schematics, and creating formal project proposal documentation.
+              Managed Smart Room facility planning at ESPS by researching smart devices, designing spatial floor schematics, and creating formal project proposal documentation.
             </p>
             <div class="card-tags">
               <span>Technical Research</span>
               <span>Floor Planning</span>
               <span>Project Proposals</span>
             </div>
-            <button class="card-btn" data-modal-title="Smart Room Facility Proposal" data-modal-body="Role: Project Manager. Researched equipment feasibility, drafted spatial architectural layouts, and prepared technical documentation for smart learning environments." data-modal-link="https://docs.google.com/spreadsheets/d/1H8G_zhrDOAwkNiOGQF46qwrowK3hDGEb9xDFxiYHQrg/edit?usp=sharing">
+            <button class="card-btn" data-modal-title="Smart Room Facility Proposal" data-modal-body="Role: Project Manager. Researched equipment feasibility, drafted spatial design layouts, and prepared technical documentation for smart learning environments." 
+                                                                                     data-modal-link="https://docs.google.com/spreadsheets/d/1H8G_zhrDOAwkNiOGQF46qwrowK3hDGEb9xDFxiYHQrg/edit?usp=sharing">
               <i data-lucide="eye"></i> View Details
             </button>
           </div>
         </div>
 
-        <!-- Item 7: Captions and Postings -->
-        <div class="portfolio-card" data-cat="layout">
+        
+        <!-- Item 7: AFP Exhibit -->
+        <div class="portfolio-card" data-cat="manage">
           <div class="card-tag-wrapper">
-            <span class="card-badge">Social Media</span>
+            <span class="card-badge">Exhibit</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Captions and Postings</h3>
+            <h3 class="card-title">AFP Exhibit</h3>
             <p class="card-desc">
-             Developed social media captions and digital content while managing post preparation and publication to maintain clear, engaging, and consistent organizational communications.
+              AFP exhibit showcasing different defense technologies and innovations project. Airlink defense project was presented in the exhibit.
             </p>
             <div class="card-tags">
-              <span>Social Media Posting</span>
-              <span>Content Creation</span>
-              <span>Caption Writing</span>
+              <span>Exhibit Planning</span>
+              <span>Airlink</span>
+              <span>AFP Ideathon</span>
             </div>
-            <button class="card-btn" data-modal-title="Captions and Postings" data-modal-body="Role: Content Caption Creator. Developed social media captions and visual content while managing post preparation and publication to maintain clear, engaging, and consistent organizational communications." 
-            data-modal-link-1="https://www.facebook.com/share/v/1HjBpa9vGx/"
-            data-modal-link-2="https://www.facebook.com/share/p/1LHnwfGSNn/"
-            data-modal-link-3="https://www.facebook.com/share/v/19akExpGYw/">
+            <button class="card-btn" data-modal-title="AFP Exhibit" data-modal-body="Role: Managed the planning and preparation for the AFP exhibit, including ehxibit  booth planning, design coordination, and promotional materials development." 
+                                     data-modal-link="https://drive.google.com/file/d/1Hcn2r5GZ05URh9MBepNCmIgoDrG_YkG9/view?usp=drive_link">
               <i data-lucide="eye"></i> View Details
             </button>
           </div>
         </div>
 
-        <!-- Item 8: Video Presentation of Airhaven -->
-        <div class="portfolio-card" data-cat="layout">
+        <!-- Item 8: Mazebot and Sumobot -->
+        <div class="portfolio-card" data-cat="projects manage">
           <div class="card-tag-wrapper">
-            <span class="card-badge">Thesis Project</span>
+            <span class="card-badge">Robotics</span>
           </div>
           <div class="card-body">
-            <h3 class="card-title"> Video Presentation of Airhaven</h3>
+            <h3 class="card-title">Mazebot and Sumobot Battle of Machines</h3>
             <p class="card-desc">
-             Developed and edited the AirHaven project video by organizing technical content, refining visual sequences, and presenting the system concept through clear and engaging storytelling.
-            </p>
-            <div class="card-tags">
-              <span>Video Editing</span>
-              <span>Content Organization</span>
-              <span>Storytelling</span>
-            </div>
-            <button class="card-btn" data-modal-title=" Video Presentation of Airhaven" data-modal-body="Role: Serves as the video editor for the AirHaven project, responsible for editing and producing the final video presentation." data-modal-link="">
-              <i data-lucide="eye"></i> View Details
-            </button>
-          </div>
-        </div>
-
-        <!-- Item 9: Coffe Table Book for 2026 Graduates -->
-        <div class="portfolio-card" data-cat="layout">
-          <div class="card-tag-wrapper">
-            <span class="card-badge">Layout Editing</span>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">Coffe Table Book for 2026 Graduates</h3>
-            <p class="card-desc">
-              Contributed to the development of a coffee table book through content organization, publication design, documentation, photography, and caption development.
+              Served as the Project Manager for both of the project. Contributed to the development of the Mazebot and Sumobot projects by leading the team, helped with the design and layout. 
             </p>
             <div class="card-tags">
               <span>Professional Aesthetics</span>
-              <span>Design</span>;
+              <span>Design</span>
               <span>Project Design</span>
             </div>
-            <button class="card-btn" data-modal-title="Coffe Table Book for 2026 Graduates" data-modal-body="Role: Contributed to the development of the coffee table book by leading design and layout, curating project documentation, and supporting photography and caption development to create a cohesive and visually engaging publication." data-modal-link="https://heyzine.com/flip-book/5064fc81e4.html?fbclid=IwY2xjawUSJMdwZG9mA2V4dG4DYWVtAjExAHNydGMGYXBwX2lkATAAAR5gHiTt-Af2boY6GtxruPiiWWCn7UnKN5v09Z1ZkpwY7WENGbqU0miC2F9bVQ_aem_E1X2T_0I6Y_VZ44kRMLOiw">
+            <button class="card-btn" data-modal-title="Mazebot and Sumobot Battle of Machines" data-modal-body="Role: Project Manager for both projects. Contributed to the development of the Mazebot and Sumobot projects by leading the team, helping with design and layout." 
+                                                                                               data-modal-link-1="https://drive.google.com/file/d/1q5T8L4DDLGnrizgP04VA-m-c7rsk5Frd/view?usp=drive_link"
+                                                                                               data-modal-link-2="https://drive.google.com/file/d/1AYaUSTz1BttLPvQf_OliMj_j2J8qRhhY/view?usp=drive_link">
               <i data-lucide="eye"></i> View Detail
             </button>
           </div>
         </div>
+
+           <!-- Item 9: CPE and Engineering Colloquium -->
+        <div class="portfolio-card" data-cat="comms">
+          <div class="card-tag-wrapper">
+            <span class="card-badge">Colloquium</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">CPE and Engineering Colloquium</h3>
+            <p class="card-desc">
+              Contributed to the development of a coffee table book through content organization, publication design, documentation, photography, and caption development.
+            </p>
+            <div class="card-tags">
+              <span>Facilitator and Organizer</span>
+              <span>Thesis Presentation</span>
+              <span>Project Design</span>
+            </div>
+            <button class="card-btn" data-modal-title="CPE and Engineering Colloquium" data-modal-body="Role: Team Airhaven was awarded Best Thesis Project and was chosen to represent the Computer Engineering Department on the Engineering Colloquium 2026. I was assigned as one of the organizer and facilitator for the CPE Colloquium 2026 " 
+                                                                                           data-modal-link-1="https://drive.google.com/file/d/1dcrwAxV0wCKU2RSD8juEvGcBVpijEOU4/view?usp=drive_link"
+                                                                                           data-modal-link-2="https://drive.google.com/file/d/1yZKIXPM2e1kM96FMr6KLgFSMEcOQLzuJ/view?usp=drive_link">
+              <i data-lucide="eye"></i> View Detail
+            </button>
+          </div>
+        </div>
+        
 
       </div>
     </section>
@@ -409,7 +418,7 @@
     </section>
 
       <!-- Case Study -->
-    <section id="case-study" class="section-mb">
+    <section id="airhaven-case-study" class="section-mb">
       <div class="case-study-card">
         <div class="case-study-header">
           <span class="badge-tech">Case Study</span>

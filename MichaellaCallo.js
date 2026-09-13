@@ -4,6 +4,41 @@ document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
   }
 
+  // Make hero and contact starfield react to pointer movement
+  const galaxySections = document.querySelectorAll('.hero, .contact-card');
+
+  galaxySections.forEach(section => {
+    section.addEventListener('mousemove', (event) => {
+      const rect = section.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 20;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * -20;
+      section.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
+    });
+
+    section.addEventListener('click', (event) => {
+      const rect = section.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+
+      const pop = document.createElement('span');
+      pop.className = 'galaxy-pop';
+      pop.style.left = `${x}px`;
+      pop.style.top = `${y}px`;
+
+      const size = 14 + Math.round(Math.random() * 14);
+      pop.style.width = `${size}px`;
+      pop.style.height = `${size}px`;
+
+      section.appendChild(pop);
+
+      setTimeout(() => {
+        if (pop && pop.parentNode) {
+          pop.parentNode.removeChild(pop);
+        }
+      }, 900);
+    });
+  });
+
   // Filter Functionality
   const filterButtons = document.querySelectorAll('.filter-btn');
   const portfolioCards = document.querySelectorAll('.portfolio-card');
